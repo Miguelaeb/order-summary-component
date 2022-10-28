@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+--Pale--blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(228, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif; 
+    background-color: var(--Pale--blue);
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main-section {
+    width: 20rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image img {
+    max-width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.letters-section {
+    text-align: center;
+    margin: 1.9rem;
+}
+
+.letters-section h1 {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.letters-section p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.letters-section p, .pricing-left p, .btn-secondary {
+    color: var(--Desaturated-blue);
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.6rem;
+    border-radius: 10px;
+    padding: 0 15px;
+    background-color: var(--Very-pale-blue);
+}
+
+.pricing-left {
+    display: flex;
+    align-items: center;
+}
+
+.pricing-left img {
+    width: 2.5rem;
+    margin-right: 15px;
+}
+
+.pricing-left h2, p {
+    font-size: 14px;
+}
+
+.pricing-left h2 {
+    margin-top: 15px;
+}
+
+.pricing-left p {
+    margin-top: -5px;
+}
+
+.pricing a{
+    font-weight: 600;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    display: block;
+    text-decoration: none;
+    margin: 1.6rem;
+    padding: 15px 0;
+    color: #fff;
+    border-radius: 10px;
+    background-color: var(--Bright-blue);
+}
+
+.btn-secondary {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pricing a:hover, .btn-primary:hover, .btn-secondary:hover {
+    cursor: pointer;
+}
+
+.pricing a:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%, 75%);
+}
+
+.btn-primary:hover {
+    background-color: hsl(245, 75%, 52%, 75%);
+}
+
+.btn-secondary:hover {
+    color: #000;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url(../images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+}
